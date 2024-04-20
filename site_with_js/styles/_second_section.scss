@@ -1,0 +1,45 @@
+.second_layer {
+  background-image: url(/img/background_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 736px;
+  .second_layer__content {
+    margin: 0 auto;
+    padding: 42px 0;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+      margin-bottom: 11px;
+    }
+    h2 {
+      display: block;
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    p {
+      display: block;
+      margin-bottom: 20px;
+      width: 460px;
+      text-align: center;
+    }
+    button {
+      font-weight: bold;
+      padding: 0.5rem 3.6rem;
+      color: white;
+      background-color: #ff4a32;
+      border-radius: 25px;
+      border: none;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      transition: all 0.6s ease;
+      &:hover {
+        background-color: darken(#ff4a32, 10%);
+        box-shadow: 5px 7px 15px rgba(70, 70, 70, 0.5);
+      }
+    }
+  }
+}

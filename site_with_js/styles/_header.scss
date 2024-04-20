@@ -1,0 +1,49 @@
+header {
+  padding: 1.5rem 0.5rem;
+  .container {
+    align-items: center;
+    margin: 0 auto;
+    nav {
+      margin-left: -16rem;
+      ul {
+        width: 46rem;
+        padding: 0 2.125rem;
+        li a {
+          position: relative;
+          text-decoration: none;
+          color: black;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        li a::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          background-color: orange;
+          height: 1.6px;
+          width: 0;
+          transition: width 0.5s ease-in-out;
+          -webkit-transition: width 0.5s ease-in-out;
+          -moz-transition: width 0.5s ease-in-out;
+          -ms-transition: width 0.5s ease-in-out;
+          -o-transition: width 0.5s ease-in-out;
+        }
+        li a:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    .profile {
+      img {
+        width: 24px;
+        object-fit: contain;
+      }
+      img:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
